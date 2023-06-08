@@ -1,0 +1,17 @@
+anlogo1 = https://i.imgur.com/NC5zd51.jpg
+burbujas = https://imgur.com/hSRceVb.png
+fondo_contacto = https://imgur.com/RwgAPQE.jpg
+Fumigador_foto = https://imgur.com/qaVQ3Tk.jpg
+LogoOzono = https://imgur.com/XKGJ9XC.png
+LogoOzonoFondoBlanco = https://imgur.com/AncF9KD.png
+manos_limpiando = https://imgur.com/S2lAvuf.jpg
+molecula = https://imgur.com/Ir3vQhh.jpg
+nice_image = https://imgur.com/UVP2H3g.jpg
+persona-traje-proteccion = https://imgur.com/5PRhBiv.jpg
+fumigador = https://imgur.com/Ojrwz24.png
+limpiar-ventana = https://imgur.com/I6dhOs0.png
+mano-limpiar = https://imgur.com/kKcXVnw.png
+salve-el-planeta = https://imgur.com/n9HFazg.png
+Sector-domiciliario = https://imgur.com/wEYe5pR.png
+Sector-profesional = https://imgur.com/uCWDn3A.png
+Sector-vehicular = https://i.imgur.com/4YL6LTz.png

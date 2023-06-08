@@ -1,0 +1,9 @@
+check = https://i.imgur.com/nb7HlsT.png
+correo-electronico = https://i.imgur.com/g3cuCPN.png
+Desinfectante = https://i.imgur.com/xIEsVjJ.png
+Desodorizante = https://i.imgur.com/wzuc7Nx.png
+facebook = https://i.imgur.com/1D7L6Dy.png
+linkedin = https://i.imgur.com/7uWZWXP.png
+menu = https://i.imgur.com/nyIe666.png
+Oxigenante = https://i.imgur.com/oGDTInz.png
+telefono-inteligente = https://i.imgur.com/fpsBXnL.png
