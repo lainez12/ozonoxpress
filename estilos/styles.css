@@ -5,18 +5,19 @@
 }
 
 :root {
-    --sm: 13px;
-    --nm: 17px;
-    --md: 24px;
+    --sm: 17px;
+    --nm: 20px;
+    --md: 26px;
     --lg: 30px;
     --titulo: 48px;
     --blue: #0D47A1;
+    --blueDark: #041446;
     --green: #22DD42;
     --degraded: #15817C;
-    --white: #fff;
+    --white: #ffffff;
     --primera_fuente: arial;
     --segunda_fuente: helvetica;
-    --screen_size: 65vw;
+    --screen_size: 70vw;
     --filtro_green: invert(71%) sepia(77%) saturate(3194%) hue-rotate(81deg) brightness(107%) contrast(85%);
     --filtro_blue: invert(21%) sepia(80%) saturate(1873%) hue-rotate(203deg) brightness(90%) contrast(99%);
     --filtro_degraded: invert(36%) sepia(82%) saturate(439%) hue-rotate(128deg) brightness(95%) contrast(89%);
@@ -67,13 +68,13 @@ header {
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    filter: var(--filtro_blanco);
+    filter: var(--filtro_blue);
 }
 
 .header-top ul li p {
     line-height: 24px;
     font-size: var(--sm);
-    color: var(--white);
+    color: var(--blueDark);
     font-weight: bold;
     font-family: var(--primera_fuente);
 }
@@ -86,7 +87,7 @@ header {
 header button {
     width: 190px;
     height: 50px;
-    font-size: var(--nm);
+    font-size: var(--sm);
     font-weight: bold;
     border-radius: 25px;
     background-color: var(--white);
@@ -248,6 +249,7 @@ main .inicio {
     font-size: var(--md);
     color: var(--blue);
     margin-bottom: 24px;
+    font-family: var(--primera_fuente);
 }
 
 .inicio-formulario form {
@@ -295,12 +297,14 @@ main .inicio {
 
 .certificacion-norma .norma {
     font-size: var(--lg);
+    font-family: var(--primera_fuente);
     text-align: center;
     color: var(--blue);
 }
 
 .certificacion-norma .norma-number {
     font-size: var(--titulo);
+    font-family: var(--primera_fuente);
     text-align: center;
     color: var(--blue);
     
@@ -325,8 +329,11 @@ main .inicio {
 
 .certificacion-texto p {
     font-size: var(--nm);
+    font-family: var(--segunda_fuente);
     font-weight: 300;
     color: #0D47A1;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 /* Logo que separara secciones*/
@@ -354,6 +361,7 @@ main .inicio {
 
 .carecteristicas h1 {
     font-size: var(--titulo);
+    font-family: var(--primera_fuente);
     color: var(--blue);
     text-align: center;
     margin-bottom: 24px;
@@ -399,6 +407,7 @@ main .inicio {
 
 .list-caracteristicas ul li p {
     font-size: var(--nm);
+    font-family: var(--segunda_fuente);
     text-align: justify;
     color: var(--degraded);
 }
@@ -415,6 +424,7 @@ main .inicio {
 
 .servicios h1 {
     font-size: var(--titulo);
+    font-family: var(--primera_fuente);
     color: var(--blue);
     text-align: center;
 }
@@ -642,12 +652,14 @@ footer .columna_uno {
 
 .columna_uno p {
     line-height: 25px;
+    font-family: var(--segunda_fuente);
 }
 
 footer div h5 {
     color: var(--white);
     font-size: var(--md);
     margin-bottom: 16px;
+    font-family: var(--segunda_fuente);
 }
 
 footer .columna_dos {
