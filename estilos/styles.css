@@ -618,6 +618,48 @@ main .inicio {
     font-family: var(--primera_fuente);
 }
 
+
+/* Experimento preguntas desplegables*/
+
+.faq-section {
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.answer {
+    display: none;
+}
+
+.answer p {
+    font-size: var(--nm);
+    color: var(--blue);
+    font-family: var(--primera_fuente);
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+  
+.toggle-btn img {
+    width: 20px;
+    height: 20px;
+}
+  
+.question {
+    display: flex;
+}
+  
+.question h2 {
+    margin-right: 15px;
+    font-size: var(--md);
+    color: var(--degraded);
+    margin-bottom: 10px;
+    font-family: var(--segunda_fuente);
+}
+
 /* Footer */
 
 footer {

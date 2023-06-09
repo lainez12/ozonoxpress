@@ -196,26 +196,51 @@
             <div class="section-preguntas">
                 <h1>Preguntas frecuentes</h1>
                 <div class="main-preguntas">
-                    <div class="pregunta">
-                        <h3>¿Cuánto tiempo demora el tratamiento?</h3>
-                        <p>Dependiendo de la superficie que necesites, contamos con tratamientos desde los $20 dólares.</p>
-                        <img src="" alt="">
+                    <!-- Aqui inicia el experimento de preguntas desplegables -->
+                    <div class="faq-section">
+                        <div class="question">
+                          <h2>¿Cuánto tiempo demora el tratamiento?</h2>
+                          <button class="toggle-btn">
+                            <img src="https://unifiedbrands.net/wp-content/uploads/2018/08/Purple-Plus-Icon.png" alt="Mostrar respuesta">
+                          </button>
+                        </div>
+                        <div class="answer">
+                          <p>Dependiendo de la superficie que necesites, contamos con tratamientos desde los $20 dólares.</p>
+                        </div>
                     </div>
-                    <div class="pregunta">
-                        <h3>¿En qué consiste el tratamiento?</h3>
-                        <p>El ozono es un gas que no puede almacenarse por esta razón tiene que producirse, utilizando nuestros generadores de ozono de última tecnología, somos capaces de cubrir todos los espacios eliminando virus, bacterias, microrganismos, olores y mucho más.
-                        Para la aplicación del tratamiento necesario que el espacio esté libre de personas y animales hasta que nuestro equipo indique que ya se puede utilizar o ingresar.</p>
-                        <img src="" alt="">
+                    
+                    <div class="faq-section">
+                        <div class="question">
+                          <h2>¿En qué consiste el tratamiento?</h2>
+                          <button class="toggle-btn">
+                            <img src="https://unifiedbrands.net/wp-content/uploads/2018/08/Purple-Plus-Icon.png" alt="Mostrar respuesta">
+                          </button>
+                        </div>
+                        <div class="answer">
+                          <p>El ozono es un gas que no puede almacenarse por esta razón tiene que producirse, utilizando nuestros generadores de ozono de última tecnología, somos capaces de cubrir todos los espacios eliminando virus, bacterias, microrganismos, olores y mucho más.Para la aplicación del tratamiento necesario que el espacio esté libre de personas y animales hasta que nuestro equipo indique que ya se puede utilizar o ingresar.</p>
+                        </div>
                     </div>
-                    <div class="pregunta">
-                        <h3>¿Cuánto tiempo demora el tratamiento?</h3>
-                        <p>Depende completamente de la superficie a tratar. Debes tomar en cuenta que, al momento de terminar la aplicación, testeamos la cantidad de ozono remanente en el ambiente, para que pueda tener nuevamente presencia de personas sin ningún problema.</p>
-                        <img src="" alt="">
+                    <div class="faq-section">
+                        <div class="question">
+                          <h2>¿Cuánto tiempo demora el tratamiento?</h2>
+                          <button class="toggle-btn">
+                            <img src="https://unifiedbrands.net/wp-content/uploads/2018/08/Purple-Plus-Icon.png" alt="Mostrar respuesta">
+                          </button>
+                        </div>
+                        <div class="answer">
+                          <p>Depende completamente de la superficie a tratar. Debes tomar en cuenta que, al momento de terminar la aplicación, testeamos la cantidad de ozono remanente en el ambiente, para que pueda tener nuevamente presencia de personas sin ningún problema.</p>
+                        </div>
                     </div>
-                    <div class="pregunta">
-                        <h3>¿Por qué tengo que aplicar Ozono y no otro producto?</h3>
-                        <p>La tecnología de nuestras maquinas, generan ozono a partir de oxígeno en el aire, el cual mediante su acción oxidante se degrada para volver a ser oxígeno. La capacidad altamente oxidante del ozono es lo que permite matar virus, bacterias, hongos y más. Los productos químicos dejan residuos, los cuales quedan en las superficies en donde es aplicado, lo que al contacto con personas puede ocasionar problemas de salud. </p>
-                        <img src="" alt="">
+                    <div class="faq-section">
+                        <div class="question">
+                          <h2>¿Por qué tengo que aplicar Ozono y no otro producto?</h2>
+                          <button class="toggle-btn">
+                            <img src="https://unifiedbrands.net/wp-content/uploads/2018/08/Purple-Plus-Icon.png" alt="Mostrar respuesta">
+                          </button>
+                        </div>
+                        <div class="answer">
+                          <p>La tecnología de nuestras maquinas, generan ozono a partir de oxígeno en el aire, el cual mediante su acción oxidante se degrada para volver a ser oxígeno. La capacidad altamente oxidante del ozono es lo que permite matar virus, bacterias, hongos y más. Los productos químicos dejan residuos, los cuales quedan en las superficies en donde es aplicado, lo que al contacto con personas puede ocasionar problemas de salud.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,4 +273,15 @@
         </div>
     </footer>
 </body>
+    <script>
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+        toggleBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const answer = btn.parentNode.nextElementSibling;
+                answer.style.display = (answer.style.display === 'none') ? 'block' : 'none';
+                btn.classList.toggle('active');
+        });
+    });
+    </script>
 </html>
