@@ -182,7 +182,7 @@ header button a {
     }
 }
 
-.header-bottom-right ul li:first-child {
+.header-bottom-right ul li:nth-child(2) {
     border-top: 2px solid var(--white);
 }
 

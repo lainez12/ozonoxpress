@@ -5,11 +5,11 @@
 }
 
 :root {
-    --sm: 17px;
+    --sm: 12.5px;
     --nm: 20px;
-    --md: 26px;
-    --lg: 30px;
-    --titulo: 48px;
+    --md: 25px;
+    --lg: 29px;
+    --titulo: 40px;
     --blue: #0D47A1;
     --blueDark: #041446;
     --green: #22DD42;
@@ -17,31 +17,11 @@
     --white: #ffffff;
     --primera_fuente: arial;
     --segunda_fuente: helvetica;
-    --screen_size: 70vw;
+    --screen_size: 100%;
     --filtro_green: invert(71%) sepia(77%) saturate(3194%) hue-rotate(81deg) brightness(107%) contrast(85%);
     --filtro_blue: invert(21%) sepia(80%) saturate(1873%) hue-rotate(203deg) brightness(90%) contrast(99%);
     --filtro_degraded: invert(36%) sepia(82%) saturate(439%) hue-rotate(128deg) brightness(95%) contrast(89%);
     --filtro_blanco: invert(99%) sepia(0%) saturate(4%) hue-rotate(206deg) brightness(105%) contrast(100%);
-}
-
-@media (max-width: 1850px) {
-    :root {
-        --screen_size: 75vw;
-    }
-}
-
-@media (max-width: 1750px) {
-    :root {
-        --screen_size: 80vw;
-    }
-}
-
-@media (max-width: 1650px) {
-    :root {
-        --screen_size: 85vw;
-    }
-
-    
 }
 
 html {
@@ -73,50 +53,42 @@ header {
     height: 90px;
     justify-content: space-between;
     align-items: center;
-}
-
-.header-top .logo-header {
-    display: none;
+    padding: 0 20px;
 }
 
 .header-top ul {
     display: flex;
+    width: 250px;
+    justify-content: space-between;
 }
 
 .header-top ul li {
-    margin-right: 60px;
+    margin-right: 1px;
     display: flex;
 }
 
 .header-top ul li img {
     width: 40px;
     height: 40px;
-    margin-right: 15px;
+    margin-right: 5px;
     filter: var(--filtro_blue);
 }
 
 .header-top ul li p {
-    line-height: 24px;
-    font-size: var(--sm);
-    color: var(--blueDark);
-    font-weight: bold;
-    font-family: var(--primera_fuente);
+    display: none;
+}
+
+.header-top .logo-header {
+    display: block;
+    width: 100px;
 }
 
 .header-top ul li:last-child {
-    margin-left: 60px;
-    margin-right: 30px;
+    display: none;
 }
 
 header button {
-    width: 190px;
-    height: 50px;
-    font-size: var(--sm);
-    font-weight: bold;
-    border-radius: 25px;
-    background-color: var(--white);
-    border: none;
-    font-family: var(--primera_fuente);
+    display: none;
 }
 
 header button a {
@@ -125,16 +97,14 @@ header button a {
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: var(--screen_size);
     height: 95px;
     border-top: 1px solid rgba(255, 255, 255, 0.431);
 }
 
-.logo-header {
-    justify-self: start;
-    width: 140px;
-    padding-top: 15px;
+.header-bottom .logo-header {
+    display: none;
 }
 
 .logo-header img {
@@ -148,24 +118,25 @@ header button a {
 .header-bottom-right {
     display: flex;
     height: 92px;
-    justify-self: end;
     align-items: center;
     color: var(--white);
+    justify-self: center;
 }
 
-.header-bottom-right ul {
+.header-bottom .header-bottom-right ul {
     display: flex;
-    margin-right: 60px;
+    margin-right: 0px;
     height: 100%;
 }
 
 .header-bottom-right ul li {
-    margin-right: 24px;
+    margin-right: 15px;
     font-family: var(--primera_fuente);
     font-size: var(--nm);
     color: var(--white);
     font-weight: bold;
-    padding: 40px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    width: 90px;
 }
 
 .header-bottom-right ul li:last-child {
@@ -180,12 +151,11 @@ header button a {
     display: flex;
 }
 
-.header-redes div {
-    width: 40px;
-    height: 40px;
+.header-bottom-right .header-redes div {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    
-    margin-left: 10px;
+    margin-left: 3px;
 
 }
 
@@ -201,7 +171,7 @@ header button a {
     top: -80px;
     z-index: -1;
     width: 100%;
-    height: 900px;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -220,20 +190,40 @@ header button a {
     justify-content: center;
     color: var(--white);
     font-size: var(--titulo);
-    margin-top: 150px;
-    margin-bottom: 250px;
+    margin-top: 120px;
+    margin-bottom: 150px;
     font-family: var(--primera_fuente);
+}
+
+.contenido h1 {
+    font-size: 50px;
 }
 
 /* Inicio de formulario */
 
 main .inicio {
     display: flex;
-    justify-content: space-around;
     width: var(--screen_size);
-    margin: 250px auto 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
 }
 
+@media (max-width: 425px) {
+    main .inicio {
+        width: 95%;
+    }
+}
+
+main .inicio-texto {
+    width: auto;
+}
+
+.inicio-texto ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 .inicio h1 {
     font-size: var(--titulo);
@@ -263,22 +253,22 @@ main .inicio {
 }
 
 .inicio ul a img {
-    width: 48px;
-    margin-right: 15px;
+    width: 30px;
+    margin-right: 5px;
     filter: var(--filtro_blue);
 }
 
 .inicio-formulario {
     background-color: var(--white);
-    padding: 30px 25px;
-    width: 600px;
-    height: 600px;
+    padding: 20px 25px;
+    width: var(--screen_size);
+    height: 520px;
 }
 
 .inicio-formulario form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 1fr 0.2fr;
     height: auto;
     align-items: baseline;
 }
@@ -286,6 +276,7 @@ main .inicio {
 .inicio-formulario form label {
     display: block;
     margin-bottom: 20px;
+    grid-column: 1/3;
 }
 
 .inicio-formulario form label:nth-last-child(4) {
@@ -352,7 +343,7 @@ footer {
     background-color: #041732;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 85% 15%;
+    grid-template-rows: 65% 25% 10%;
 }
 
 footer ul .footer-list {
@@ -368,7 +359,8 @@ footer ul .footer-list a {
 footer .columna_uno {
     color: var(--white);
     font-size: var(--sm);
-    padding: 90px;
+    padding: 5px 30px;
+    grid-column: 1/4;
 }
 
 .columna_uno img {
@@ -389,11 +381,25 @@ footer div h5 {
 }
 
 footer .columna_dos {
-    padding: 80px;
+    padding: 5px;
+    display: none;
 }
 
 footer .columna_tres {
-    padding: 80px;
+    padding: 5px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.columna_tres ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.columna_tres ul li a {
+    font-size: 0px;
 }
 
 .columna_tres ul li a img {
@@ -404,8 +410,9 @@ footer .columna_tres {
 
 .copyright {
     background-color: #020c1a;
-    padding: 25px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     grid-column: 1/4;
+    grid-row: 3/4;
 }
 
 .copyright p {
