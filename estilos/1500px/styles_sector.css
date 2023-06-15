@@ -17,31 +17,17 @@
     --white: #ffffff;
     --primera_fuente: arial;
     --segunda_fuente: helvetica;
-    --screen_size: 70vw;
+    --screen_size: 90vw;
     --filtro_green: invert(71%) sepia(77%) saturate(3194%) hue-rotate(81deg) brightness(107%) contrast(85%);
     --filtro_blue: invert(21%) sepia(80%) saturate(1873%) hue-rotate(203deg) brightness(90%) contrast(99%);
     --filtro_degraded: invert(36%) sepia(82%) saturate(439%) hue-rotate(128deg) brightness(95%) contrast(89%);
     --filtro_blanco: invert(99%) sepia(0%) saturate(4%) hue-rotate(206deg) brightness(105%) contrast(100%);
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1400px) {
     :root {
-        --screen_size: 75vw;
+        --screen_size: 98vw;
     }
-}
-
-@media (max-width: 1750px) {
-    :root {
-        --screen_size: 80vw;
-    }
-}
-
-@media (max-width: 1650px) {
-    :root {
-        --screen_size: 85vw;
-    }
-
-    
 }
 
 html {
@@ -75,10 +61,6 @@ header {
     align-items: center;
 }
 
-.header-top .logo-header {
-    display: none;
-}
-
 .header-top ul {
     display: flex;
 }
@@ -106,6 +88,18 @@ header {
 .header-top ul li:last-child {
     margin-left: 60px;
     margin-right: 30px;
+}
+
+@media (max-width: 1310px) {
+    .header-top ul li {
+        margin-right: 10px;
+        display: flex;
+    }
+
+    .header-top ul li:last-child {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
 }
 
 header button {
@@ -184,7 +178,6 @@ header button a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
     margin-left: 10px;
 
 }
@@ -436,7 +429,7 @@ footer ul .footer-list a {
 footer .columna_uno {
     color: var(--white);
     font-size: var(--sm);
-    padding: 90px;
+    padding: 20px 50px;
 }
 
 .columna_uno img {
@@ -457,11 +450,11 @@ footer div h5 {
 }
 
 footer .columna_dos {
-    padding: 80px;
+    padding: 20px;
 }
 
 footer .columna_tres {
-    padding: 80px;
+    padding: 20px;
 }
 
 .columna_tres ul li a img {
